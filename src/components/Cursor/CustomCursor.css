@@ -1,0 +1,60 @@
+.custom-cursor-dot {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 8px;
+  height: 8px;
+  background-color: var(--accent-cyan);
+  border-radius: 50%;
+  pointer-events: none;
+  z-index: 99999;
+  margin-top: -4px;
+  margin-left: -4px;
+  transition: transform 0.05s ease-out, background-color 0.2s ease;
+  box-shadow: 0 0 10px var(--accent-cyan);
+}
+
+.custom-cursor-ring {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 36px;
+  height: 36px;
+  border: 1.5px solid rgba(168, 85, 247, 0.6);
+  border-radius: 50%;
+  pointer-events: none;
+  z-index: 99998;
+  margin-top: -18px;
+  margin-left: -18px;
+  transition: width 0.25s ease, height 0.25s ease, margin 0.25s ease, border-color 0.25s ease, background-color 0.25s ease;
+}
+
+.custom-cursor-dot.hovered {
+  transform: scale(1.6);
+  background-color: var(--accent-purple);
+  box-shadow: 0 0 14px var(--accent-purple);
+}
+
+.custom-cursor-ring.hovered {
+  width: 54px;
+  height: 54px;
+  margin-top: -27px;
+  margin-left: -27px;
+  border-color: var(--accent-purple);
+  background-color: rgba(168, 85, 247, 0.12);
+}
+
+.custom-cursor-dot.clicked {
+  transform: scale(0.6);
+}
+
+.custom-cursor-ring.clicked {
+  transform: scale(0.85);
+}
+
+@media (max-width: 1024px) {
+  .custom-cursor-dot,
+  .custom-cursor-ring {
+    display: none !important;
+  }
+}

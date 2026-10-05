@@ -1,0 +1,56 @@
+:root {
+  /* Color Palette - Elena Voss Editorial Dark Theme */
+  --bg-primary: #08080a;
+  --bg-secondary: #0f0e14;
+  --bg-surface: #14121c;
+  --bg-card: rgba(18, 15, 28, 0.72);
+  --bg-card-hover: rgba(28, 23, 44, 0.9);
+  --bg-glass: rgba(12, 10, 20, 0.78);
+  --bg-glass-heavy: rgba(8, 8, 12, 0.94);
+
+  /* Accents & Signals */
+  --accent-purple: #a855f7;
+  --accent-violet: #8b5cf6;
+  --accent-purple-glow: rgba(168, 85, 247, 0.3);
+  --accent-cyan: #38bdf8;
+  --accent-cyan-glow: rgba(56, 189, 248, 0.28);
+  --accent-emerald: #10b981;
+  --accent-emerald-glow: rgba(16, 185, 129, 0.35);
+  --accent-amber: #f59e0b;
+
+  /* Typography Colors */
+  --text-primary: #ffffff;
+  --text-secondary: #cbd5e1;
+  --text-muted: #8892b0;
+  --text-dim: #4a5568;
+
+  /* Borders & Gradients */
+  --border-subtle: rgba(255, 255, 255, 0.08);
+  --border-medium: rgba(255, 255, 255, 0.14);
+  --border-accent: rgba(168, 85, 247, 0.3);
+  --border-accent-bright: rgba(168, 85, 247, 0.65);
+  --glow-shadow: 0 8px 32px rgba(168, 85, 247, 0.22);
+  --glow-shadow-lg: 0 16px 48px rgba(168, 85, 247, 0.35);
+
+  /* Typography */
+  --font-heading: 'Outfit', 'Syne', -apple-system, sans-serif;
+  --font-hero: 'Syne', 'Outfit', sans-serif;
+  --font-body: 'Inter', -apple-system, BlinkMacSystemFont, sans-serif;
+  --font-mono: 'JetBrains Mono', monospace;
+
+  /* Layout & Spacing */
+  --header-height: 80px;
+  --max-width: 1360px;
+  --container-padding: 28px;
+  --radius-xs: 4px;
+  --radius-sm: 8px;
+  --radius-md: 14px;
+  --radius-lg: 20px;
+  --radius-xl: 28px;
+  --radius-full: 9999px;
+
+  /* Transitions */
+  --transition-fast: 0.2s cubic-bezier(0.16, 1, 0.3, 1);
+  --transition-normal: 0.35s cubic-bezier(0.16, 1, 0.3, 1);
+  --transition-slow: 0.6s cubic-bezier(0.16, 1, 0.3, 1);
+}

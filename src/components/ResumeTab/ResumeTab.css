@@ -1,0 +1,58 @@
+.resume-tab-wrap {
+  position: fixed;
+  right: 32px;
+  bottom: 0;
+  z-index: 99;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 16px;
+}
+
+.resume-tab-btn {
+  writing-mode: vertical-rl;
+  text-orientation: mixed;
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  padding: 18px 10px;
+  background: rgba(18, 15, 36, 0.7);
+  border: 1px solid var(--border-subtle);
+  border-radius: var(--radius-sm);
+  color: var(--text-secondary);
+  font-family: var(--font-mono);
+  font-size: 0.8rem;
+  letter-spacing: 0.15em;
+  backdrop-filter: blur(12px);
+  transition: all var(--transition-fast);
+}
+
+.resume-icon {
+  transform: rotate(45deg);
+  transition: transform var(--transition-fast);
+}
+
+.resume-tab-btn:hover {
+  color: #ffffff;
+  border-color: var(--accent-purple);
+  background: rgba(168, 85, 247, 0.2);
+  transform: translateY(-4px);
+  box-shadow: 0 0 15px rgba(168, 85, 247, 0.4);
+}
+
+.resume-tab-btn:hover .resume-icon {
+  transform: rotate(45deg) translate(2px, -2px);
+  color: var(--accent-cyan);
+}
+
+.resume-tab-line {
+  width: 1.5px;
+  height: 90px;
+  background: linear-gradient(180deg, var(--accent-purple), transparent);
+}
+
+@media (max-width: 1024px) {
+  .resume-tab-wrap {
+    display: none;
+  }
+}

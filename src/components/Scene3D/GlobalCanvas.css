@@ -1,0 +1,15 @@
+.global-3d-canvas-wrap {
+  position: fixed;
+  inset: 0;
+  width: 100vw;
+  height: 100vh;
+  z-index: 1;
+  pointer-events: none;
+  overflow: hidden;
+}
+
+.global-3d-canvas-wrap canvas {
+  width: 100% !important;
+  height: 100% !important;
+  pointer-events: auto;
+}
