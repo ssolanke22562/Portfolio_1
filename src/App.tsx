@@ -19,6 +19,8 @@ import { ChessArena } from './components/Chess/ChessArena';
 import { Contact } from './components/Contact/Contact';
 import { Footer } from './components/Footer/Footer';
 import { ChatWidget } from './components/ChatWidget/ChatWidget';
+import { Analytics } from '@vercel/analytics/react';
+import { SpeedInsights } from '@vercel/speed-insights/react';
 import './styles/global.css';
 
 export const App: React.FC = () => {
@@ -55,6 +57,8 @@ export const App: React.FC = () => {
 
       <Footer />
       <ChatWidget />
+      <Analytics />
+      <SpeedInsights />
     </div>
   );
 };
